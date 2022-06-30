@@ -167,8 +167,8 @@ class _LoginState extends State<Login> {
                         var dio = Dio();
 
                         var login = await dio.post(
-                          // 'http://10.0.2.2:8765/users/login',
-                          'http://jsdteste.tk/users/login',
+                          'http://201.15.116.228/users/login',
+                          // 'http://jsdteste.tk/users/login',
                           data: {
                             'siape': siape.text,
                             'password': senha.text,
@@ -187,7 +187,7 @@ class _LoginState extends State<Login> {
                           if (jsonLogin['nome'] != 'Erro') {
                             var anos = await dio.post(
                               // 'http://10.0.2.2:8765/mobile/anos',
-                              'http://jsdteste.tk/mobile/anos',
+                              'http://201.15.116.228/mobile/anos',
                               data: {
                                 'serial': jsonLogin['serial'],
                               },

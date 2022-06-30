@@ -94,8 +94,8 @@ class _CheckState extends State<Check> {
                       var dio = Dio();
 
                       var resposta = await dio.post(
-                        // 'http://10.0.2.2:8765/mobile/check',
-                        'http://jsdteste.tk/mobile/check',
+                        'http://201.15.116.228/mobile/check',
+                        // 'http://jsdteste.tk/mobile/check',
                         data: {
                           'check': code.text,
                           'email': widget.emailDigitado,

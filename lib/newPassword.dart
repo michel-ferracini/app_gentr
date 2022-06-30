@@ -130,8 +130,8 @@ class _NewPasswordState extends State<NewPassword> {
                         var dio = Dio();
 
                         var resposta = await dio.post(
-                          // 'http://10.0.2.2:8765/mobile/newpassword',
-                          'http://jsdteste.tk/mobile/newpassword',
+                          'http://201.15.116.228/mobile/newpassword',
+                          // 'http://jsdteste.tk/mobile/newpassword',
                           data: {
                             'email': widget.emailDigitado,
                             'password': password.text,

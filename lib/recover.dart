@@ -94,8 +94,8 @@ class _LoginState extends State<Recover> {
                         final dio = Dio();
 
                         var resposta = await dio.post(
-                          // 'http://10.0.2.2:8765/mobile/recover',
-                          'http://jsdteste.tk/mobile/recover',
+                          'http://201.15.116.228/mobile/recover',
+                          // 'http://jsdteste.tk/mobile/recover',
                           data: {
                             'email': email.text,
                           },
